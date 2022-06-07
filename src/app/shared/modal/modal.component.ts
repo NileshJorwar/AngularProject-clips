@@ -15,4 +15,8 @@ export class ModalComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  closeModal(){
+    // $event.preventDefault();
+    this.modal.toggleModal();
+  }
 }
