@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA} from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ModalComponent } from './modal/modal.component';
 
@@ -10,6 +10,11 @@ import { ModalComponent } from './modal/modal.component';
   ],
   imports: [
     CommonModule
-  ]
+  ],
+  exports:[
+    ModalComponent
+  ],
+  schemas: [ CUSTOM_ELEMENTS_SCHEMA ]
+
 })
 export class SharedModule { }
